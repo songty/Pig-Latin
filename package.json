@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/songty/Pig-Latin/issues"
   },
-  "homepage": "https://github.com/songty/Pig-Latin"
+  "homepage": "https://github.com/songty/Pig-Latin",
+  "dependencies": {
+    "commander": "^2.2.0"
+  }
 }
