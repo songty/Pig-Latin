@@ -5,7 +5,13 @@ var _ = require('../piggify');
 
 describe('pig', function() {
 	it('Piggifies strings', function () {
-		expect(_.piggi(['b', 'a', 'n', 'a', 'n', 'a'])).to.eql("ananabay");
+		expect(_.piggi('banana')).to.eql("ananabay");
+	});
+});
+
+describe('pig all', function() {
+	it('Piggifies all strings', function () {
+		expect(_.pigEachWord('banana hello')).to.eql("ananabay ellohay");
 	});
 });
 

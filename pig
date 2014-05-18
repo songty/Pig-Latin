@@ -6,7 +6,7 @@ var trueNum = [1, 2, 3];
 
 program
   .version('0.0.1')
-  .option('-p, --piggification <x>', 'Piggify string', _.parseString)
+  .option('-p, --piggification <x>', 'Piggify string')
   .option('-a, --addition <x> <y>', 'Add numbers', _.parseString)
   .option('-s, --subtraction <x> <y>', 'Subtract numbers', _.parseString)
   .option('-m, --multiply <x> <y>', 'Multiple numbers', _.parseString)
@@ -18,7 +18,7 @@ program
 
 console.log('Your translation:');
 if (program.piggification) {
-	console.log(_.piggi(program.piggification));
+	console.log(_.pigEachWord(program.piggification));
 }
 
 // console.log('you guessed a number with:');
